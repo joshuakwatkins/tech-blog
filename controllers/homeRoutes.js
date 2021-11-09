@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { Comment, User, Blog } = require("../models/");
+const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   try {
@@ -17,7 +18,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.get("/blog/:id", async (req, res) => {
+router.get("/blog/:id", withAuth, async (req, res) => {
   try {
     const blog = await Blog.findByPk(req.params.id, {
       include: [
@@ -33,6 +34,7 @@ router.get("/blog/:id", async (req, res) => {
       res.status(404).json({ message: "No blog with that ID found." });
     } else {
       const blogPrint = blog.get({ plain: true });
+      console.log(blogPrint);
       res.render("blog", {
         blogPrint,
       });

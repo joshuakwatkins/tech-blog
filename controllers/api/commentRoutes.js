@@ -3,12 +3,13 @@ const { Comment } = require("../../models/");
 const withAuth = require("../../utils/auth");
 
 router.post("/", withAuth, async (req, res) => {
-  const url = window.location.pathname;
   try {
+    console.log(
+      "testing at the post route for comments ======================================="
+    );
     const newComment = await Comment.create({
-      title: req.body.title,
       body: req.body.body,
-      blog_id: url.substring(url.lastIndexOf("/") + 1),
+      blog_id: req.body.blog_id,
       user_id: req.session.user_id,
     });
     res.json(newComment);

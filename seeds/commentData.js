@@ -2,54 +2,54 @@ const { Comment } = require("../models");
 
 const commentData = [
   {
-    title: "I LUV PIKACHU!",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "I LUV PIKACHU!",
     user_id: 1,
+    blog_id: 1,
   },
   {
-    title: "Growlithe is the far superior choice",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "Growlithe is the far superior choice",
     user_id: 1,
+    blog_id: 2,
   },
   {
-    title: "You can't read",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "You can't read",
     user_id: 2,
+    blog_id: 3,
   },
   {
-    title: "Harry Potter is the far superior choice",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "Harry Potter is the far superior choice",
     user_id: 2,
+    blog_id: 3,
   },
   {
-    title: "But I can't eat dairy",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "But I can't eat dairy",
     user_id: 3,
+    blog_id: 4,
   },
   {
-    title: "Nutmilk is the far superior choice",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "Nutmilk is the far superior choice",
     user_id: 3,
+    blog_id: 5,
   },
   {
-    title: "Checkout my highscores",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "Checkout my highscores",
     user_id: 4,
+    blog_id: 1,
   },
   {
-    title: "A solid work ethic is the far superior choice",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "A solid work ethic is the far superior choice",
     user_id: 4,
+    blog_id: 2,
   },
   {
-    title: "Stand up for your worker's rights!",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "Stand up for your worker's rights!",
     user_id: 5,
+    blog_id: 4,
   },
   {
-    title: "Python is the far superior choice",
-    body: `You know what? It is beets. I've crashed into a beet truck.`,
+    body: "Python is the far superior choice",
     user_id: 5,
+    blog_id: 5,
   },
 ];
 
